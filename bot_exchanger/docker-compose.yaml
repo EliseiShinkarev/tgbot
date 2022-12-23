@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  bot:
+    container_name: bot_exchanger
+    build: .
+
+networks:
+  default:
+    name: bridge-nerwork
+    external: true
